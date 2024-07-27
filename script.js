@@ -7,7 +7,7 @@ function closeMenu() {
     document.getElementById('side-menu').style.width = "0px";
  }
 
-   //side bar stuff
+// side bar stuff
    document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('div[id]');
     const navLinks = document.querySelectorAll('.menu-text a');
@@ -31,3 +31,23 @@ function closeMenu() {
         observer.observe(section);
     });
 });
+
+
+ // load underline
+ document.addEventListener('DOMContentLoaded', function() {
+    const highlightElement = document.getElementById('highlight');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        } else {
+          entry.target.classList.remove('active');
+        }
+      });
+    }, {
+      threshold: 0.1 // Adjust the threshold as needed
+    });
+
+    observer.observe(highlightElement);
+  });

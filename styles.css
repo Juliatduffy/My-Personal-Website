@@ -53,6 +53,28 @@ body {
   padding: 10px 0; 
 }
 
+.highlight {
+  position: relative;
+  display: inline-block;
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust the space between the text and underline */
+  height: 3px; /* Adjust the height of the underline */
+  width: 100%;
+  background-color:  rgb(153, 117, 203);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out; /* Adjust the duration and easing as needed */
+}
+
+.highlight.active::after {
+  transform: scaleX(1);
+}
+
 .profile-pic {
   flex-shrink: 0;
   width: 20vw; 
