@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Julia's Website</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="pw-imgs/my_favicon.png" type="image/x-icon">
+    </head>
+
+    <body>
+        <!-- nav bar html -->
+        <div class="header-bar">
+            <div class="menu-icon" id="menu-icon" onclick="openMenu()"> &#9776;
+            </div>
+        </div>
+        
+        <!-- side bar html -->
+        <div class="side-menu" id="side-menu">
+            <div class="close-icon" id="close-icon"
+                onclick="closeMenu()">&times; </div>
+            <nav>
+                <ul class="menu-text">
+                    <li><a href="#title">
+                            Home
+                        </a>
+                    </li>
+                    <li><a href="#about-me">
+                            About Me
+                        </a>
+                    </li>
+                    <li><a href="#projects">
+                            Projects
+                        </a>
+                    </li>
+                    <li><a href="#education">
+                            Education
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div> 
+        
+        <main class="main">
+            <div class="title">
+                <div class="title-wrap">
+                    <div class="text-wrap">
+                        <h1>Hello! my name is <span class="highlight"
+                                id="highlight">Julia Duffy.</span></h1>
+                        <h3>I am a computer science student at the University of
+                            Utah
+                            and an aspiring software engineer. My primary
+                            interests are
+                            in aerospace engineering, computer organization, and
+                            UI/UX
+                            development.</h3>
+                    </div>
+                    <img class="profile-pic" src="pw-imgs/profile-pic.png">
+                </div>
+            <noscript>
+                For full functionality of this site it is necessary to enable
+                JavaScript. Here are the <a
+                    href="https://www.enable-javascript.com/">
+                    instructions how to enable JavaScript in your web
+                    browser</a>.
+            </noscript>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
