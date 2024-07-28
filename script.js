@@ -51,3 +51,17 @@ function closeMenu() {
 
     observer.observe(highlightElement);
   });
+
+  // Education drop downs
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.dropdown-btn');
+  
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const description = button.parentElement.nextElementSibling;
+      const isVisible = description.style.display === 'block';
+      description.style.display = isVisible ? 'none' : 'block';
+      button.textContent = isVisible ? '+' : '-'; // Toggle arrow icon
+    });
+  });
+});
