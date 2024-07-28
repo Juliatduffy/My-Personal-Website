@@ -156,7 +156,7 @@ body {
   text-align: left;
   z-index: 2;
   background-size: contain;
-  background-color:  rgb(134, 226, 157);
+  background-color:  rgb(134, 206, 226);
 }
 
 .about-me strong {
@@ -181,7 +181,7 @@ body {
 .about-me p {
   width: 20vw;
   flex: 1;
-  margin-right: 3vw;
+  /* margin-right: 3vw; */
   font-size: 1.2rem;
 }
 
@@ -210,31 +210,6 @@ body {
   padding: 5px;
   margin: auto;
 }
-
-.project-container {
-  width: 100%;
-  height: 100vh;
-  margin-bottom: 5vh;
-  background-color: rgb(37, 36, 36);
-}
-
-.project-content {
-  padding-top: 10vh;
-  width: 80%;
-  max-width: 800px;
-  margin: 0 auto;
-  background-color: rgb(37, 36, 36);
-}
-
-.project-content h1 {
-  align-items: center;
-  text-align: center;
-  margin: auto;
-  padding: 0 7px;
-  width: fit-content;
-  background-color: #3b3b3b;
-}
-
 
 .education {
   margin: 0;
@@ -312,7 +287,7 @@ body {
 
 .underline {
   text-decoration: underline;
-  color:rgb(134, 226, 157);
+  color:rgb(134, 206, 226);
 }
 
 .course-item {
@@ -336,7 +311,7 @@ body {
 .dropdown-btn {
   background: none;
   border: none;
-  color:rgb(134, 226, 157);
+  color:rgb(134, 206, 226);
   font-size: 1.6rem;
   cursor: pointer;
   margin-left: 10px;
@@ -346,4 +321,58 @@ body {
   width: 30px;
   margin-left: 10px;
   transform: translateY(8px);
+}
+.project-container {
+  width: 100%;
+  margin-bottom: 5vh;
+  background-color: rgb(30, 30, 30);
+}
+
+.project-content {
+  padding-top: 5vh;
+  padding-bottom: 8vh;
+  width: 90%;
+  max-width: 930px;
+  margin: 0 auto;
+}
+
+.project-content h1 {
+  text-align: left;
+  margin-left: auto;
+  margin-bottom: 4vh;
+  padding: 0 7px;
+  font-size: 1.5rem;
+  width: fit-content;
+  /* background-color: rgb(114, 79, 163); */
+}
+
+.project-card {
+  max-width: 930px;
+  margin: 0 auto 2rem auto;
+  padding: 1rem;
+  /* border: 1px solid #ccc; */
+  border-radius: 10px; 
+  background-color: rgb(39, 39, 39);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.project-card h2 {
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  margin-bottom: 1rem;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tag {
+  background-color: rgb(87, 178, 203);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
 }
