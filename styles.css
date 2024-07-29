@@ -1,4 +1,5 @@
-html{
+/* Body Styling ----------------------------- */
+html {
   scroll-behavior: smooth;
   background-color: rgb(153, 117, 203);
 }
@@ -6,10 +7,10 @@ html{
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', sans-serif;
+  font-family: "Trebuchet MS", sans-serif;
   line-height: 1.8;
   background-color: rgb(153, 117, 203);
-  overflow-x: hidden;  
+  overflow-x: hidden;
   height: 100%;
   display: flex;
 }
@@ -18,72 +19,15 @@ body {
   color: white;
   padding: 0;
   margin: 0;
-  overflow-x: hidden;  
+  overflow-x: hidden;
   width: 100%;
   min-height: 100vh;
   padding-top: 80px;
   align-items: center;
-  position: relative; 
-}
-
-.title {
-  width: 100%;
-  background-color: rgb(29, 29, 29);
-}
-
-.title-wrap {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start; 
-  position: relative; /* Ensure it positions relative to the container */
-  max-width: 800px;
-  width: 90%;
-  margin: auto;
-  height: 80vh;
-}
-
-.text-wrap {
-  flex: 1;
-}
-
-.text-wrap h1,
-.text-wrap h3 {
-  margin: 0;
-  padding: 10px 0; 
-}
-
-.highlight {
   position: relative;
-  display: inline-block;
 }
 
-.highlight::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -2px; /* Adjust the space between the text and underline */
-  height: 3px; /* Adjust the height of the underline */
-  width: 100%;
-  background-color:  rgb(153, 117, 203);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s ease-in-out; /* Adjust the duration and easing as needed */
-}
-
-.highlight.active::after {
-  transform: scaleX(1);
-}
-
-.profile-pic {
-  flex-shrink: 0;
-  width: 20vw; 
-  height: 20vw; 
-  border-radius: 50%; /* Make it circular */
-  margin-left: 40px; 
-  padding: 8px;
-  background-color: rgb(153, 117, 203);
-}
+/* Header styling ----------------------------- */
 
 .header-bar {
   background-color: rgb(153, 117, 203);
@@ -120,7 +64,7 @@ body {
   width: 0;
   right: 0;
   height: 100%;
-  box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
   background-color: white;
   transition: 0.5s;
   z-index: 1000;
@@ -149,41 +93,116 @@ body {
   font-size: 1.2rem;
 }
 
+/* Intro styling ----------------------------- */
+.title {
+  width: 100%;
+  background-color: rgb(29, 29, 29);
+}
 
-.about-me {
+.title-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  max-width: 800px;
+  width: 90%;
+  margin: auto;
+  height: 80vh;
+}
+
+.text-wrap {
+  flex: 1;
+}
+
+.text-wrap h1,
+.text-wrap h3 {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.profile-pic {
+  flex-shrink: 0;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  margin-left: 40px;
+  padding: 8px;
+  background-color: rgb(153, 117, 203);
+}
+
+/* Text Styling */
+
+.highlight {
+  position: relative;
+  display: inline-block;
+}
+
+.highlight::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 3px;
+  width: 100%;
+  background-color: rgb(153, 117, 203);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+.highlight.active::after {
+  transform: scaleX(1);
+}
+
+.underline {
+  text-decoration: underline;
+  color: rgb(134, 206, 226);
+}
+
+/* Skills Styling ----------------------------- */
+
+.skills {
   padding: 10vh 8vw;
   margin: 0;
   text-align: left;
   z-index: 2;
   background-size: contain;
-  background-color:  rgb(134, 206, 226);
+  background-color: rgb(134, 206, 226);
 }
 
-.about-me strong {
+.skills strong {
   font-size: 1.4rem;
   font-weight: 700;
   padding-bottom: 30px;
 }
 
-.about-me-wrap {
-  display: flex; 
+.skills-wrap {
+  display: flex;
   align-items: flex-start;
   background-color: rgb(30, 30, 30);
-  box-shadow: 30px 30px .5px #525252;
+  box-shadow: 30px 30px 0.5px #525252;
   max-width: 800px;
   align-items: center;
   position: relative;
   margin: 10px auto 40px auto;
   padding: 30px;
-  
 }
 
-.about-me p {
+.skills p {
   width: 20vw;
   flex: 1;
   /* margin-right: 3vw; */
   font-size: 1.2rem;
 }
+
+.skill-chart {
+  width: 30px;
+  margin-left: 10px;
+  transform: translateY(8px);
+}
+
+/* Software Styling ----------------------------- */
 
 .software {
   width: 100%;
@@ -211,126 +230,16 @@ body {
   margin: auto;
 }
 
-.education {
-  margin: 0;
-  padding: 0;
-  background-color: rgb(153, 117, 203);
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5vh 0; /* Add padding for vertical spacing */
-}
+/* Projects Styling -----------------------------*/
 
-.education-content {
-  width: 90%;
-  max-width: 800px;
-  background-color: rgb(29, 29, 29);
-  color: white;
-  padding: 30px;
-  border-radius: 2px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.education-content h1 {
-  margin: 0;
-  text-align: left;
-  font-size: 2rem;
-  padding-left: 20px;
-}
-
-.education-content h2 {
-  font-size: 1.2rem;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  color: rgb(255, 255, 255);
-}
-.education-content h3 {
-  padding-left: 20px;
-  font-size: 1.2rem;
-  margin-top: 20px;
-  margin:auto;
-  text-align: left;
-  color: rgb(255, 255, 255);
-}
-
-.education-content h4 {
-  transform: translateY(-10px);
-  padding-left: 20px;
-  font-size: 1.2rem;
-  font-weight: 300;
-  margin: auto;
-  text-align: left;
-  color: rgb(255, 255, 255);
-}
-
-.education-content p {
-  font-size: 11pt;
-  margin: 10px 0 10px 20px;
-  line-height: 1.8;
-}
-.education-content ul {
-  margin: 10px 0;
-  line-height: 1.6;
-  padding-left: 20px;
-}
-
-.education-content li {
-  margin: 5px 0;
-}
-
-.course-description {
-  display: none;
-  margin-left: 20px;
-  margin-top: 10px;
-}
-
-.underline {
-  text-decoration: underline;
-  color:rgb(134, 206, 226);
-}
-
-.course-item {
-  margin-bottom: 10px;
-  list-style: none;
-}
-
-.course-header {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; /* Align items to the start */
-  cursor: pointer;
-  font-size: 12pt;
-  font-weight: 300;
-}
-
-.course-header span {
-  margin-right: 10px; /* Add some space between the text and the button */
-}
-
-.dropdown-btn {
-  background: none;
-  border: none;
-  color:rgb(134, 206, 226);
-  font-size: 1.6rem;
-  cursor: pointer;
-  margin-left: 10px;
-  padding: 0; /* Remove padding */
-}
-.skill-chart{
-  width: 30px;
-  margin-left: 10px;
-  transform: translateY(8px);
-}
 .project-container {
   width: 100%;
-  margin-bottom: 5vh;
   background-color: rgb(30, 30, 30);
 }
 
 .project-content {
   padding-top: 5vh;
-  padding-bottom: 8vh;
+  padding-bottom: 4vh;
   width: 90%;
   max-width: 930px;
   margin: 0 auto;
@@ -338,7 +247,6 @@ body {
 
 .project-content h1 {
   text-align: left;
-  margin-left: auto;
   margin-bottom: 4vh;
   padding: 0 7px;
   font-size: 1.5rem;
@@ -351,7 +259,7 @@ body {
   margin: 0 auto 2rem auto;
   padding: 1rem;
   /* border: 1px solid #ccc; */
-  border-radius: 10px; 
+  border-radius: 10px;
   background-color: rgb(39, 39, 39);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: left;
@@ -375,4 +283,227 @@ body {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   font-size: 0.9rem;
+}
+
+/* Education/Club Styling ----------------------------- */
+
+.education-title,
+.club-title {
+  background-color: rgb(29, 29, 29);
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 3px;
+  margin: 0;
+  margin-left: 10%;
+  width: fit-content;
+  padding: 3px 15px;
+}
+
+.club-title-wrap,
+.education-title-wrap {
+  width: 100%;
+  background-color: rgb(228, 228, 228);
+  padding: 30px 3px;
+}
+
+.education,
+.club {
+  background-color: rgb(228, 228, 228);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.education-content,
+.club-content {
+  width: 90%;
+  max-width: 900px;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.club-content {
+  margin-bottom: 40px;
+}
+
+.club-item {
+  background-color: rgb(29, 29, 29);
+  margin: 0 auto 1rem 0;
+  padding: 0px;
+  width: 100%;
+  border-radius: 3px;
+  text-align: left;
+}
+
+.club-header {
+  width: 100%;
+  position: relative;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.club-header h1 {
+  background-color: rgb(29, 29, 29);
+  width: fit-content;
+  padding: 0px 10px;
+  text-align: left;
+  border-radius: 3px;
+}
+.club-item h2 {
+  font-size: 1.2rem;
+  color: rgb(134, 206, 226);
+}
+
+.education-content h1 {
+  margin: 0;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.education-content h2 {
+  font-size: 1.2rem;
+  margin: 20px 0px;
+  color: rgb(255, 255, 255);
+}
+
+.education-content h3 {
+  font-size: 1.2rem;
+  margin: auto;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+
+.education-content h4 {
+  transform: translateY(-10px);
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin: auto;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+
+.education-content p {
+  font-size: 11pt;
+  margin: 10px 0;
+  line-height: 1.8;
+}
+
+.course-list {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.education-content li {
+  margin: 5px 0;
+}
+
+.course-description {
+  display: none;
+  margin-top: 10px;
+}
+
+.course-item {
+  list-style: none;
+}
+
+.course-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the start */
+  cursor: pointer;
+  font-size: 12pt;
+  font-weight: 300;
+}
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  color: rgb(153, 117, 203);
+  font-size: 1.6rem;
+  cursor: pointer;
+  margin-left: 20px;
+  padding: 0;
+}
+
+
+.course-list {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+  color: white;
+}
+
+
+/* Contact Styling ----------------------------- */
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 0px;
+  width:95%;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 20px;
+}
+
+.contact-icon {
+  margin-right: 10px;
+}
+
+.contact-icon img {
+  width: 4vw;
+  height: auto;
+}
+
+.contact-text {
+  font-size: 1.4rem;
+}
+
+.contact-button {
+  margin-left: 3vw;
+  padding: 5px 10px;
+  background-color: #57B2CB;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: #499ca8;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 700px) {
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-item {
+    margin: 5px 0;
+  }
+
+  .contact-icon img {
+    width: 5vw;
+  }
+
+  .contact-text {
+    font-size: 1rem;
+  }
+
+  .contact-button {
+    margin: 20px 0;
+  }
 }

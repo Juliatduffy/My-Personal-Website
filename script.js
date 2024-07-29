@@ -35,22 +35,35 @@ function closeMenu() {
 
  // load underline
  document.addEventListener('DOMContentLoaded', function() {
-    const highlightElement = document.getElementById('highlight');
+  const highlightElements = document.querySelectorAll('.highlight'); // Select all elements with the class 'highlight'
+  const delayBase = 500; // Base delay in milliseconds
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const index = Array.from(highlightElements).indexOf(entry.target);
+      const delay = index * delayBase; // 500ms delay per element index
+
+      if (entry.isIntersecting) {
+        // Set a timeout to add the 'active' class after a delay
+        entry.target.dataset.timeoutId = setTimeout(() => {
           entry.target.classList.add('active');
-        } else {
-          entry.target.classList.remove('active');
+        }, delay);
+      } else {
+        // Clear the timeout if the element is not intersecting and remove the 'active' class
+        if (entry.target.dataset.timeoutId) {
+          clearTimeout(entry.target.dataset.timeoutId);
+          entry.target.dataset.timeoutId = null;
         }
-      });
-    }, {
-      threshold: 0.1 // Adjust the threshold as needed
+        entry.target.classList.remove('active');
+      }
     });
-
-    observer.observe(highlightElement);
+  }, {
+    threshold: 0.1 // Adjust the threshold as needed
   });
+
+  highlightElements.forEach(element => observer.observe(element));
+});
+
 
   // Education drop downs
 document.addEventListener('DOMContentLoaded', () => {
@@ -63,5 +76,28 @@ document.addEventListener('DOMContentLoaded', () => {
       description.style.display = isVisible ? 'none' : 'block';
       button.textContent = isVisible ? '+' : '-'; // Toggle arrow icon
     });
+  });
+});
+
+
+//underline attempt 2
+
+document.addEventListener("DOMContentLoaded", () => {
+  const emphasizes = document.querySelectorAll('.emphasize');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('line-visible');
+      } else {
+        entry.target.classList.remove('line-visible');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  emphasizes.forEach(emphasize => {
+    observer.observe(emphasize);
   });
 });
