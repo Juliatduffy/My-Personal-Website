@@ -59,7 +59,7 @@ body {
 }
 
 .side-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 0;
   right: 0;
@@ -105,7 +105,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   position: relative;
-  max-width: 800px;
+  max-width: 870px;
   width: 90%;
   margin: auto;
   height: 80vh;
@@ -118,18 +118,36 @@ body {
 .text-wrap h1,
 .text-wrap h3 {
   margin: 0;
-  padding: 10px 0;
+  padding: 0;
+  margin-bottom: 30px;
 }
 
 .profile-pic {
   flex-shrink: 0;
-  width: 20vw;
-  height: 20vw;
+  width: 22vw;
+  height: 22vw;
   border-radius: 50%;
-  margin-left: 40px;
+  margin-left: 50px;
   padding: 8px;
   background-color: rgb(153, 117, 203);
 }
+
+.cv-button {
+  padding: 1vw 10px;
+  background-color: rgb(41, 41, 41);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.cv-button:hover {
+  background-color: rgb(56, 56, 56);
+  padding: 1.2vw 12px;
+}
+
 
 /* Text Styling */
 
@@ -148,10 +166,32 @@ body {
   background-color: rgb(153, 117, 203);
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1s ease-in;
 }
 
 .highlight.active::after {
+  transform: scaleX(1);
+}
+
+.highlight1 {
+  position: relative;
+  display: inline-block;
+}
+
+.highlight1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 3px;
+  width: 100%;
+  background-color: rgb(153, 117, 203);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.7s ease-in-out;
+}
+
+.highlight1.active::after {
   transform: scaleX(1);
 }
 
@@ -327,7 +367,7 @@ body {
 }
 
 .club-content {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .club-item {
@@ -466,13 +506,13 @@ body {
 }
 
 .contact-text {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .contact-button {
   margin-left: 3vw;
-  padding: 5px 10px;
-  background-color: #57B2CB;
+  padding: 1vw 10px;
+  background-color: #191919;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -482,10 +522,11 @@ body {
 }
 
 .contact-button:hover {
-  background-color: #499ca8;
+  background-color: rgb(56, 56, 56);
+  padding: 1.2vw 12px;
 }
 
-/* Media Queries for responsiveness */
+
 @media (max-width: 700px) {
   .contact-content {
     flex-direction: column;

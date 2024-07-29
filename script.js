@@ -33,10 +33,10 @@ function closeMenu() {
 });
 
 
- // load underline
- document.addEventListener('DOMContentLoaded', function() {
+ // load underlines
+document.addEventListener('DOMContentLoaded', function() {
   const highlightElements = document.querySelectorAll('.highlight'); // Select all elements with the class 'highlight'
-  const delayBase = 500; // Base delay in milliseconds
+  const delayBase = 400; // Base delay in milliseconds
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -62,6 +62,37 @@ function closeMenu() {
   });
 
   highlightElements.forEach(element => observer.observe(element));
+});
+
+// load underlines 1
+document.addEventListener('DOMContentLoaded', function() {
+  const highlight1Elements = document.querySelectorAll('.highlight1'); // Select all elements with the class 'highlight1'
+  const delayBase = 100; // Base delay in milliseconds
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const index = Array.from(highlight1Elements).indexOf(entry.target);
+      const delay = index * delayBase; // 500ms delay per element index
+
+      if (entry.isIntersecting) {
+        // Set a timeout to add the 'active' class after a delay
+        entry.target.dataset.timeoutId = setTimeout(() => {
+          entry.target.classList.add('active');
+        }, delay);
+      } else {
+        // Clear the timeout if the element is not intersecting and remove the 'active' class
+        if (entry.target.dataset.timeoutId) {
+          clearTimeout(entry.target.dataset.timeoutId);
+          entry.target.dataset.timeoutId = null;
+        }
+        entry.target.classList.remove('active');
+      }
+    });
+  }, {
+    threshold: 0.1 // Adjust the threshold as needed
+  });
+
+  highlight1Elements.forEach(element => observer.observe(element));
 });
 
 
