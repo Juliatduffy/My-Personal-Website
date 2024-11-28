@@ -357,8 +357,8 @@ body {
 
 .education-content,
 .club-content {
-  width: 90%;
-  max-width: 900px;
+  width: 75%;
+  margin: auto;
   background-color: rgb(29, 29, 29);
   color: white;
   padding: 15px 30px;
@@ -546,5 +546,8 @@ body {
 
   .contact-button {
     margin: 20px 0;
+  }
+  .profile-pic {
+    display:none;
   }
 }

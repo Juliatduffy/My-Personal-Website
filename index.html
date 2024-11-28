@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Julia's Website</title>
         <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="pw-imgs/my_favicon.png" type="image/x-icon">
+        <link rel="icon" href="pw-imgs/favicon.png" type="image/x-icon">
     </head>
 
     <body>
@@ -21,7 +21,7 @@
                 onclick="closeMenu()">&times; </div>
             <nav>
                 <ul class="menu-text">
-                    <li><a href="#title">
+                    <li><a href="#intro">
                             Intro
                         </a>
                     </li>
@@ -42,25 +42,24 @@
         </div>
 
         <main class="main">
-            <div class="title">
+            <div class="title" id="intro">
                 <div class="title-wrap">
                     <div class="text-wrap">
                         <h1>Hello! my name is <span class="highlight"
                                 id="highlight">Julia Duffy.</span></h1>
-                        <h3>I am a computer science student at the University of
-                            Utah
-                            and an aspiring software engineer. My primary
+                        <h3>I am an aspiring software engineer, currently working towards
+                            a master's in computer science student at the University of
+                            Utah. My primary
                             interests are
                             in <span class="highlight"
-                            id="highlight">aerospace</span> engineering, <span class="highlight"
                             id="highlight">computer organization</span>, and
                             <span class="highlight"
                             id="highlight">UI/UX</span>
                             development.</h3>
-                            <a href="path/to/your-cv.pdf" download class="cv-button">Download CV</a>
+                            <a href="https://docs.google.com/document/d/10mpq7rcHAeOiEHUutqnYiYNKFpmhsiGgTtd1XsR6yJs/edit?usp=sharing" download class="cv-button">Download CV</a>
 
                     </div>
-                    <img class="profile-pic" src="pw-imgs/profile.jpg">
+                    <img class="profile-pic" src="pw-imgs/profileicon.png">
                 </div>
                 
             </div>
@@ -140,6 +139,48 @@
                     <h1>Personal Projects:</h1>
 
                     <div class="project-card">
+                        <h2>Climbing Team Website</h2>
+                        <p>Built an informational website for the climbing team
+                            at the <span class="highlight1"
+                            id="highlight1">University of Utah</span> using HTML, CSS, and
+                            JavaScript. See the finished product at <a
+                                href="https://utahclimbingteam.com/"
+                                style="color:rgb(134, 206, 226);">utahclimbingteam.com</a>.</p>
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+
+                    <!-- <div class="project-card">
+                        <h2>Colorblind Color Recognizer</h2>
+                        <p>Constructed a <span class="highlight1"
+                            id="highlight1">"CRUD"</span> web app that uses images taken
+                            from the user's camera or <span class="highlight1"
+                            id="highlight1">uploaded from their file
+                            system,</span>
+                            and highlights the requested color while graying out
+                            the rest. This app is meant to provide an easy way for colorblind individuals to identify color that they can't see.</p>
+                        <div class="tags">
+                            <span class="tag">C#</span>
+                            <span class="tag">MAUI</span>
+                        </div>
+                    </div> -->
+
+                    <div class="project-card">
+                        <h2>Portfolio Website</h2>
+                        <p>Built this  <span class="highlight1"
+                            id="highlight1">portfolio website</span> from scratch using HTML, CSS, and
+                            JavaScript. To learn more about how I made this website, check out my github repository <a href="https://github.com/Juliatduffy/my-personal-website" style="color:rgb(134, 206, 226);">here</a>.</p>
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
                         <h2>Raspberry Pi Weather Station</h2>
                         <p>Created a weather sensor using a <span class="highlight1"
                             id="highlight1">Raspberry Pi </span> and a
@@ -154,56 +195,14 @@
                         </div>
                     </div>
 
-                    <div class="project-card">
-                        <h2>Climbing Team Website</h2>
-                        <p>Built an informational website for the climbing team
-                            at the <span class="highlight1"
-                            id="highlight1">University of Utah</span> using HTML, CSS, and
-                            JavaScript. See the finished product here: <a
-                                href="https://utahclimbingteam.com/"
-                                style="color: white">utahclimbingteam.com</a></p>
-                        <div class="tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <h2>Colorblind Color Recognizer</h2>
-                        <p>Constructed a <span class="highlight1"
-                            id="highlight1">"CRUD"</span> web app that uses images taken
-                            from the user's camera or <span class="highlight1"
-                            id="highlight1">uploaded from their file
-                            system,</span>
-                            and highlights the requested color while graying out
-                            the rest. This app is meant to provide an easy way for colorblind individuals to identify color that they can't see.</p>
-                        <div class="tags">
-                            <span class="tag">C#</span>
-                            <span class="tag">MAUI</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <h2>Personal Website</h2>
-                        <p>I built this page <span class="highlight1"
-                            id="highlight1">from scratch</span> using HTML, CSS, and
-                            JavaScript.</p>
-                        <div class="tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-                    </div>
-
                     <p>To access the source code for these projects and to see
                         more of my work, check out my <a href="https://github.com/Juliatduffy"
                             style="color:rgb(134, 206, 226);">Github</a>.</p>
                 </div>
             </div>
-            <div class="education-title-wrap"><h1
+            <div class="education-title-wrap" id="education"><h1
                     class="education-title">Education:</h1></div>
-            <div class="education" id="education">
+            <div class="education" >
                 <div class="education-content">
                     <h1>University of
                             Utah</h1>
@@ -515,12 +514,12 @@
                                 me a lot about small business management and
                                 effective communication.</p>
 
-                            <h2>HacktheU Member <span
+                            <!-- <h2>HacktheU Member <span
                                     style="font-size: medium; color:white;">
                                     (2024-present)</span></h2>
                             <p>As a member of HacktheU, I participate in
                                 <span class="highlight1"
-                                id="highlight1">hackathons</span> and collaborative projects.</p>
+                                id="highlight1">hackathons</span> and collaborative projects.</p> -->
 
                             <h2>Semi-Professional Climbing <span
                                     style="font-size: medium; color:white;">
@@ -548,15 +547,15 @@
                             <a href="mailto:jtduffy7@gmail.com" class="contact-icon"><img src="pw-imgs/mail-icon.png" alt="Email Icon"></a>
                             <p class="contact-text">jtduffy7@gmail.com</p>
                         </div>
-                        <div class="contact-item">
+                        <!-- <div class="contact-item">
                             <a href="https://www.linkedin.com/in/juliatduffy" class="contact-icon"><img src="pw-imgs/linkdin.jpg" alt="LinkedIn Icon"></a>
                             <p class="contact-text">@juliatduffy</p>
-                        </div>
+                        </div> -->
                         <div class="contact-item">
                             <a href="https://github.com/juliatduffy" class="contact-icon"><img src="pw-imgs/git.png" alt="GitHub Icon"></a>
                             <p class="contact-text">@juliatduffy</p>
                         </div>
-                        <a href="path/to/your-cv.pdf" download class="contact-button">Download CV</a>
+                        <a href="https://docs.google.com/document/d/10mpq7rcHAeOiEHUutqnYiYNKFpmhsiGgTtd1XsR6yJs/edit?usp=sharing" download class="contact-button">Download CV</a>
                     </div>
                 </div>
                 
