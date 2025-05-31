@@ -105,7 +105,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   position: relative;
-  max-width: 870px;
+  max-width: 1000px;
   width: 90%;
   margin: auto;
   height: 80vh;
@@ -117,7 +117,6 @@ body {
 
 .text-wrap h1,
 .text-wrap h3 {
-  line-height:  2;
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
@@ -126,13 +125,17 @@ body {
 .text-wrap h1{
   line-height:  1.4;
 }
+.text-wrap h3 {
+  font-size: 1.3rem;
+  line-height:  1.8;
+}
 
 
 .profile-pic {
   flex-shrink: 0;
-  width: 22vw;
-  height: 22vw;
-  border-radius: 50%;
+  width: 24vw;
+  height: 24vw;
+  border-radius: 0%;
   margin-left: 50px;
   padding: 8px;
   background-color: rgb(153, 117, 203);
@@ -460,7 +463,7 @@ body {
 .course-header {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Align items to the start */
+  justify-content: flex-start; 
   cursor: pointer;
   font-size: 12pt;
   font-weight: 300;
