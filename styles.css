@@ -106,7 +106,7 @@ body {
   justify-content: flex-start;
   position: relative;
   max-width: 1000px;
-  width: 90%;
+  width: 100%;
   margin: auto;
   height: 80vh;
 }
@@ -132,8 +132,8 @@ body {
 
 .profile-pic {
   flex-shrink: 0;
-  width: 24vw;
-  height: 24vw;
+  width: 20vw;
+  height: 20vw;
   border-radius: 0%;
   margin-left: 50px;
   padding: 8px;
@@ -141,8 +141,9 @@ body {
 }
 
 .cv-button {
-  padding: 1vw 10px;
-  background-color: rgb(41, 41, 41);
+  padding: 0.9vw 10px;
+  margin-top: 20px;
+  background-color: rgb(64, 64, 64);
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -153,7 +154,7 @@ body {
 
 .cv-button:hover {
   background-color: rgb(56, 56, 56);
-  padding: 1.2vw 12px;
+  padding: 1vw 12px;
 }
 
 /* Text Styling */
@@ -299,7 +300,6 @@ body {
   text-align: left;
   margin-bottom: 4vh;
   padding: 0 7px;
-  font-size: 1.5rem;
   width: fit-content;
   /* background-color: rgb(114, 79, 163); */
 }
@@ -311,16 +311,45 @@ body {
   /* border: 1px solid #ccc; */
   border-radius: 10px;
   background-color: rgb(39, 39, 39);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
+.project-card {
+  max-width: 930px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 15px;
+  background-color: rgb(39, 39, 39);
+  text-align: left;
 
+  /* angled shadow effect */
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5),
+    -5px -5px 20px rgba(0, 0, 0, 0.2);
+
+  /* subtle tilt for 3D feel */
+  transform: rotateX(1deg) rotateY(-1deg);
+  transition: all 0.4s ease;
+}
+
+.project-card:hover {
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.6),
+    -10px -10px 25px rgba(0, 0, 0, 0.25);
+  transform: rotateX(0deg) rotateY(0deg) translateY(-5px) scale(1.02);
+}
 .project-card h2 {
+  font-size: 1.3rem;
+  color: rgb(186, 236, 251);
   margin-bottom: 0.5rem;
+}
+.project-card img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .project-card p {
   margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
 .tags {
@@ -342,7 +371,7 @@ body {
   background-color: rgb(29, 29, 29);
   font-size: 1.5rem;
   font-weight: 600;
-  border-radius: 3px;
+  border-radius: 10px;
   margin: 0;
   margin-left: 10%;
   width: fit-content;
@@ -372,7 +401,7 @@ body {
   background-color: rgb(29, 29, 29);
   color: white;
   padding: 15px 30px;
-  border-radius: 2px;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
