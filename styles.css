@@ -219,12 +219,6 @@ body {
   background-color: rgb(134, 206, 226);
 }
 
-.skills strong {
-  font-size: 1.4rem;
-  font-weight: 700;
-  padding-bottom: 30px;
-}
-
 .skills-wrap {
   display: flex;
   align-items: flex-start;
@@ -237,17 +231,38 @@ body {
   padding: 30px;
 }
 
-.skills p {
-  width: 20vw;
-  flex: 1;
-  /* margin-right: 3vw; */
-  font-size: 1.2rem;
+.skills-list {
+  margin-top: 10px;
+}
+.skills-item li {
+  margin-left: 10px;
+  padding-bottom: 12px;
+  line-height: 1.4rem;
+  color: #e6e5e5;
 }
 
-.skill-chart {
-  width: 30px;
-  margin-left: 10px;
-  transform: translateY(8px);
+.underline-purple {
+  position: relative;
+  display: inline-block;
+  text-decoration: none; /* We’ll animate the underline instead */
+  color: inherit;
+}
+
+.underline-purple::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  height: 3px;
+  width: 100%;
+  background-color: rgb(153, 117, 203);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 1.3s ease-in-out;
+}
+
+.underline-purple.active::after {
+  transform: scaleX(1);
 }
 
 /* Software Styling ----------------------------- */
