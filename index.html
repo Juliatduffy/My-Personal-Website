@@ -25,20 +25,16 @@
                             Intro
                         </a>
                     </li>
-                    <li><a href="#skills">
-                            Skills
-                        </a>
-                    </li>
                     <li><a href="#projects">
                             Projects
                         </a>
                     </li>
-                    <li><a href="#education">
-                            Education
+                    <li><a href="#club">
+                            Extracurriculars
                         </a>
                     </li>
-                    <li><a href="#extracurriculars">
-                            Extracurriculars
+                    <li><a href="#education">
+                            Education
                         </a>
                     </li>
                 </ul>
@@ -62,12 +58,18 @@
                                 in Full Stack Development, Computer Security, and App
                                 Development.
                                 In my free time, I enjoy rock climbing and
-                                traveling!</h3><br>
+                                traveling!</h3>
+                                <p class="contact-inline">
+                                    <strong>Email:</strong> <a href="mailto:jtduffy7@gmail.com">jtduffy7@gmail.com</a> &nbsp; | &nbsp;
+                                    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/juliatduffy">juliatduffy</a> &nbsp; | &nbsp;
+                                    <strong>GitHub:</strong> <a href="https://github.com/Juliatduffy">juliatduffy</a>
+                                </p>
+                                <br>
                             <a
                                 target="_blank" rel="noopener noreferrer"
                                 href="https://docs.google.com/document/d/1k0Y6eDY9fRlFb20iX08eAteP54SmjGFVOV9asEXKO4c/edit?usp=drive_link"
                                 download class="cv-button">My Resume</a>
-
+                                
                         </div>
                         <img class="profile-pic" src="pw-imgs/me.png">
                     </div>
@@ -90,198 +92,147 @@
                     </div>
                 </div>
             </div>
-<!-- 
-            <div class="skills" id="skills">
+
+            <div class="project-container" id="projects">
                 <div class="container">
-                    <h2>My Work Experience</h2>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h3>Software Engineering Intern — Pusher LLC</h3>
-                                <ul>
-                                    <li>Rebuilt Pusher’s shipping system and integrated Shippo’s REST API.</li>
-                                    <li>Improved clothing profit margins by an estimated <span class="underline-purple">$7,400/year</span>.</li>
-                                </ul>
+                    <div class="project-content">
+                        <h1>Projects</h1>
+
+                        <!-- AIRWISE -->
+                        <div class="project-card">
+                            <img src="pw-imgs/airwise.png" class="project-img">
+                            <h2>AirWise — EPA-Funded Educational Platform</h2>
+                            <p>For my senior capstone project, I am working with a team of four to create an app to help school staff learn about, report, and monitor sources of indoor air pollution in schools. My main focus is on the backend architecture and database design, but I having also been helping with the front-end. We are planning to connect our app to sensors in schools around Salt Lake City, and eventually deploy it as a tool for real users.</p>
+                            <div class="tags">
+                                <span class="tag">Flutter</span>
+                                <span class="tag">FastAPI</span>
+                                <span class="tag">Firestore</span>
                             </div>
                         </div>
 
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h3>Software Engineer — AirWise (EPA-Funded Project)</h3>
-                                <ul>
-                                    <li>Responsible for backend architecture and database design.</li>
-                                    <li>Built persistence and data modeling using <span class="underline-purple">Flutter/Dart</span>, 
-                                        <span class="underline-purple">Firestore</span>, and 
-                                        <span class="underline-purple">Firebase</span>.
-                                    </li>
-                                </ul>
+                        <!-- PUSHER -->
+                        <div class="project-card">
+                            <img src="pw-imgs/pusher.png" class="project-img">
+                            <h2>Pusher Website — Shipping Automation & WooCommerce</h2>
+                            <p>Last summer I did a software development internship at my favorite 
+                                climbing hold company, <a href="https://pusher.world/">Pusher</a>. I spent most of my time improving 
+                                their shipping workflow by fixing rate calculations, simplifying 
+                                how clothing orders are packaged, and opening up Canadian shipping. 
+                                I also did general upkeep of the WordPress site and fixed a few bugs that I found. 
+                                The changes I made reduced shipping losses by an estimated $7,400 per year, improved 
+                                the overall feel of the website, 
+                                and opened up the website to the Canadian market.</p>
+                            <div class="tags">
+                                <span class="tag">WooCommerce</span>
+                                <span class="tag">Shippo API</span>
+                                <span class="tag">WordPress</span>
                             </div>
                         </div>
 
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h3>Computer Science Teaching Assistant — University of Utah</h3>
-                                <ul>
-                                    <li>Assisted students with C#, .NET, debugging, and software design principles.</li>
-                                    <li>Developed strong communication skills through lectures and code reviews.</li>
-                                </ul>
+                        
+                        <!-- CLIMBING TEAM WEBSITE -->
+                        <div class="project-card">
+                            <img src="pw-imgs/climbing-team-website.png" class="project-img">
+                            <h2>University of Utah Climbing Team Website</h2>
+                            <p>In Summer 2024, I made a <a href="https://utahclimbingteam.com/">website</a> for the Climbing Team at the University of Utah. The website is now used by over 400 club members for team sign ups and information.
+            I am no longer involved with the climbing team board so I wrote extensive <a href="https://github.com/Juliatduffy/Climbing-Team-Website">documentation</a> and handed off the website to a new owner who has since kept the information on the site up to date.</p>
+                            <div class="tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
                             </div>
                         </div>
 
+                        <!-- IMAGE RECOGNITION APP -->
+                        <div class="project-card">
+                            <img src="pw-imgs/fruit.png" class="project-img">
+                            <h2>Fruit Image Recognition App</h2>
+                            <p>This is an Android <a href="https://github.com/Juliatduffy/Image-Recognition-App">app</a> I made that recognizes fruits. I started by training an on-device machine learning <a href="https://github.com/Juliatduffy/TensorFlow-Image-Recognition">model</a> using TensorFlow Lite. To get enough images to train the model I wrote a Python script with a custom web crawler to retrieve and format images from bing.
+                                This project was a fun introduction to neural networks and Android's CameraX library.
+                            </p>
+                            <div class="tags">
+                                <span class="tag">TensorFlow Lite</span>
+                                <span class="tag">Kotlin</span>
+                                <span class="tag">Python</span>
+                            </div>
+                        </div>
+                        <!-- DRAWING APP -->
+                        <div class="project-card">
+                            <img src="pw-imgs/draw.png" class="project-img">
+                            <h2>Drawing App with Cloud Sharing</h2>
+                            <p>Android drawing app with persistent storage using Room and a custom Ktor server for sharing drawings. Includes undo/redo, bitmap rendering, and Jetpack Compose UI.</p>
+                            <div class="tags">
+                                <span class="tag">Kotlin</span>
+                                <span class="tag">Compose</span>
+                                <span class="tag">Room</span>
+                                <span class="tag">Ktor</span>
+                            </div>
+                        </div>
+                        
+                        <!-- MANCALA -->
+                        <div class="project-card">
+                            <img src="pw-imgs/mancala.png" class="project-img">
+                            <h2>Mancala App with AI Opponent</h2>
+                            <p>Developed an Android <a href="https://github.com/Juliatduffy/Mancala-App">Mancala app</a> with three AI levels: random, greedy, and minimax with alpha-beta pruning. Includes animations, settings, and full game logic.</p>
+                            <div class="tags">
+                                <span class="tag">Kotlin</span>
+                                <span class="tag">Android</span>
+                                <span class="tag">AI</span>
+                            </div>
+                        </div>
+
+                        <!-- LMS -->
+                        <div class="project-card">
+                            <h2>LMS Database</h2>
+                            <p>As a multi-week project in my advanced databases course, I designed and built a SQL database for a Learning Management System (inspired by Canvas). We connected this database to a C# Blazor front end.</p>
+                            <div class="tags">
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Blazor</span>
+                                <span class="tag">C#</span>
+                            </div>
+                        </div>
+
+                        <!-- WEATHER STATION -->
+                        <div class="project-card">
+                            <h2>Raspberry Pi Weather Station</h2>
+                            <p>Built a real-time weather dashboard using a Raspberry Pi and Sense HAT. Logged data and displayed historical charts via a Flask web interface.</p>
+                            <div class="tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Flask</span>
+                                <span class="tag">Raspberry Pi</span>
+                            </div>
+                        </div>
+            
+                        <!-- MOE INTERPRETER -->
+                        <div class="project-card">
+                            <h2>Custom Programming Language Interpreter</h2>
+                            <p>Built a full interpreter in Racket for a custom object-oriented language (“Moe”). Implemented parsing, evaluation, closures, continuations, garbage collection, and memory allocation.</p>
+                            <div class="tags">
+                                <span class="tag">Racket</span>
+                            </div>
+                        </div>
+                        <!-- GOLF GAME -->
+                        <div class="project-card">
+                            <h2>2D Golf Game — Box2D Physics</h2>
+                            <p>Team project: built a 2D projectile golf game in C++ with real physics using Box2D. Implemented collision detection, trajectory simulation, and multiple levels.</p>
+                            <div class="tags">
+                                <span class="tag">C++</span>
+                                <span class="tag">Qt Creator</span>
+                                <span class="tag">Box2D</span>
+                            </div>
+                        </div>
+
+                        <p>See more of my work on <a href="https://github.com/Juliatduffy" style="color:rgb(134, 206, 226);">GitHub</a>.</p>
                     </div>
                 </div>
-            </div> -->
-
-
-<div class="project-container" id="projects">
-    <div class="container">
-        <div class="project-content">
-            <h1>Projects</h1>
-
-            <!-- AIRWISE -->
-            <div class="project-card">
-                <img src="pw-imgs/airwise.png" class="project-img">
-                <h2>AirWise — EPA-Funded Educational Platform</h2>
-                <p>For my senior capstone project, I am working with a team of four to create an app to help school staff learn about, report, and monitor sources of indoor air pollution in schools. My main focus is on the backend architecture and database design, but I having also been helping with the front-end. We are planning to connect our app to sensors in schools around Salt Lake City, and eventually deploy it as a tool for real users.</p>
-                <div class="tags">
-                    <span class="tag">Flutter</span>
-                    <span class="tag">FastAPI</span>
-                    <span class="tag">Firestore</span>
-                </div>
             </div>
-
-            <!-- PUSHER -->
-            <div class="project-card">
-                <img src="pw-imgs/pusher.png" class="project-img">
-                <h2>Pusher Website — Shipping Automation & WooCommerce</h2>
-                <p>Last summer I did a software development internship at my favorite 
-                    climbing hold company, <a href="https://pusher.world/">Pusher</a>. I spent most of my time improving 
-                    their shipping workflow by fixing rate calculations, simplifying 
-                    how clothing orders are packaged, and opening up Canadian shipping. 
-                    I also did general upkeep of the WordPress site and fixed a few bugs that I found. 
-                    The changes I made reduced shipping losses by an estimated $7,400 per year, improved 
-                    the overall feel of the website, 
-                    and opened up the website to the Canadian market.</p>
-                <div class="tags">
-                    <span class="tag">WooCommerce</span>
-                    <span class="tag">Shippo API</span>
-                    <span class="tag">WordPress</span>
-                </div>
             </div>
-
-            
-            <!-- CLIMBING TEAM WEBSITE -->
-            <div class="project-card">
-                <img src="pw-imgs/climbing-team-website.png" class="project-img">
-                <h2>University of Utah Climbing Team Website</h2>
-                <p>In Summer 2024, I made a <a href="https://utahclimbingteam.com/">website</a> for the Climbing Team at the University of Utah. The website is now used by over 400 club members for team sign ups and information.
-I am no longer involved with the climbing team board so I wrote extensive documentation and handed off the website to a new owner who has since kept the information on the site up to date.</p>
-                <div class="tags">
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
-                    <span class="tag">JavaScript</span>
-                </div>
-            </div>
-
-            <!-- IMAGE RECOGNITION APP -->
-            <div class="project-card">
-                <img src="pw-imgs/fruit.png" class="project-img">
-                <h2>Fruit Image Recognition App</h2>
-                <p>This is an Android app I made that recognizes fruits. I started by training an on-device machine learning model using TensorFlow Lite. To get enough images to train the model I wrote a Python script with a custom web crawler to retrieve and format images from bing.
-                    This project was a fun introduction to neural networks and Android's CameraX library.
-                </p>
-                <div class="tags">
-                    <span class="tag">TensorFlow Lite</span>
-                    <span class="tag">Kotlin</span>
-                    <span class="tag">Python</span>
-                </div>
-            </div>
-            <!-- DRAWING APP -->
-            <div class="project-card">
-                <img src="pw-imgs/draw.png" class="project-img">
-                <h2>Drawing App with Cloud Sharing</h2>
-                <p>Android drawing app with persistent storage using Room and a custom Ktor server for sharing drawings. Includes undo/redo, bitmap rendering, and Jetpack Compose UI.</p>
-                <div class="tags">
-                    <span class="tag">Kotlin</span>
-                    <span class="tag">Compose</span>
-                    <span class="tag">Room</span>
-                    <span class="tag">Ktor</span>
-                </div>
-            </div>
-            
-            <!-- MANCALA -->
-            <div class="project-card">
-                <img src="pw-imgs/mancala.png" class="project-img">
-                <h2>Mancala App with AI Opponent</h2>
-                <p>Developed an Android Mancala game with three AI levels: random, greedy, and minimax with alpha-beta pruning. Includes animations, settings, and full game logic.</p>
-                <div class="tags">
-                    <span class="tag">Kotlin</span>
-                    <span class="tag">Android</span>
-                    <span class="tag">AI</span>
-                </div>
-            </div>
-
-            <!-- LMS -->
-            <div class="project-card">
-                <h2>Learning Management System (LMS)</h2>
-                <p>Built a full LMS using MySQL, C# Blazor, and Entity Framework. Designed schema for courses, users, assignments, and grades. Implemented grading logic and dashboard UI.</p>
-                <div class="tags">
-                    <span class="tag">MySQL</span>
-                    <span class="tag">Blazor</span>
-                    <span class="tag">C#</span>
-                </div>
-            </div>
-
-            <!-- WEATHER STATION -->
-            <div class="project-card">
-                <h2>Raspberry Pi Weather Station</h2>
-                <p>Built a real-time weather dashboard using a Raspberry Pi and Sense HAT. Logged data and displayed historical charts via a Flask web interface.</p>
-                <div class="tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">Flask</span>
-                    <span class="tag">Raspberry Pi</span>
-                </div>
-            </div>
- 
-            <!-- MOE INTERPRETER -->
-            <div class="project-card">
-                <h2>Custom Programming Language Interpreter</h2>
-                <p>Built a full interpreter in Racket for a custom object-oriented language (“Moe”). Implemented parsing, evaluation, closures, continuations, garbage collection, and memory model design.</p>
-                <div class="tags">
-                    <span class="tag">Racket</span>
-                    <span class="tag">PL Design</span>
-                </div>
-            </div>
-            <!-- GOLF GAME -->
-            <div class="project-card">
-                <h2>2D Golf Game — Box2D Physics</h2>
-                <p>Team project: built a 2D projectile golf game in C++ with real physics using Box2D. Implemented collision detection, trajectory simulation, and multiple levels.</p>
-                <div class="tags">
-                    <span class="tag">C++</span>
-                    <span class="tag">Qt Creator</span>
-                    <span class="tag">Box2D</span>
-                </div>
-            </div>
-
-            <p>See more of my work on <a href="https://github.com/Juliatduffy" style="color:rgb(134, 206, 226);">GitHub</a>.</p>
-        </div>
-    </div>
-</div>
-
-            </div>
-            
-                <div class="club">
+                <div class="club" id="club">
                     <div class="container">
                     <div class="club-content">
-
-                        <h2>Campus Involvement</h2>
-
+                        <h2>Extracurriculars</h2>
                         <hr>
-
-                        <h2>Utah Climbing Team Vice President <span>(2020-2024)</span></h2>
+                        <h2>Utah Climbing Team Vice President <span style="color: rgb(134, 206, 226)">(2020-2024)</span></h2>
                         <p> From 2024-2025 I helped run one of the largest
                             student groups on campus, with over 350 members. I
                             was one of the event managers and I was in charge of
@@ -293,11 +244,11 @@ I am no longer involved with the climbing team board so I wrote extensive docume
                             such as
                             a nationwide training camp
                             with USA Climbing, and several community-focused
-                            events with 100 attendees.</p>
+                            events with over 100 attendees.</p>
                         <hr>
 
                         <h2>USA Climbing National Team Member
-                                <span>(2020-2024)</span></h2>
+                                <span style="color: rgb(134, 206, 226)">(2020-2024)</span></h2>
                         <p>Competed internationally- 2x World
                             Championship
                             competitor, 7x USA National team member, and
@@ -320,7 +271,7 @@ I am no longer involved with the climbing team board so I wrote extensive docume
                 </div>
             </div>
 
-            <div class="education">
+            <div class="education" id="education">
                 <div class="container">
                 <div class="education-content">
                     <h1>Education:</h1>
