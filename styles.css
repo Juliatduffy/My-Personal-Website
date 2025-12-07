@@ -255,8 +255,7 @@ a {
 .software {
   width: 100%;
   background-color: rgb(255, 255, 255);
-  display: flex;
-  align-items: center;
+  display: block;
   padding-top: 10vh;
   padding-bottom: 10vh;
 }
@@ -267,21 +266,24 @@ a {
   gap: 3rem;
   padding: 0;
   width: 100%;
-  max-width: none;
-  max-width: 800px;
-  margin: auto;
+  margin: 0 auto;
   background-color: rgb(255, 255, 255);
 }
 
-.sw-pic {
+.sw-pic,
+.sw-pic-vscode {
   width: 8vw;
   padding: 5px;
   margin: auto;
 }
 .sw-pic-vscode {
-  width: 5.5vw;
+  width: 7vw;
+  max-width: 90%;
+  padding: 0.6rem;
+  box-sizing: border-box;
+  height: auto;
+  margin: auto;
 }
-
 /* Projects Styling -----------------------------*/
 
 .project-container {
